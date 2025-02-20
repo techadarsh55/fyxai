@@ -1,0 +1,117 @@
+{% extends 'landing_master.html' %}
+{% load static %}
+{% block content %}
+<style type="text/css">
+	.about_section_1{
+	    padding: inherit;
+	    margin: auto;
+	}
+	.about_section_1 .col-sm-12 > strong{
+		font-size: xx-large;
+	}
+	.about_section_1 .col-sm-12 strong >strong{
+		font-size: xx-large;
+		color: var(--primary);
+	}
+	@media screen and (max-width:768px){
+
+		.mission{
+			flex-direction: column-reverse;
+		}
+
+	}
+</style>
+<section class="about_section_1">
+	<div class="container">
+		<div class="row d-flex" style="margin:auto;">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<strong><strong>We build bridges</strong> between companies and customers</strong>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<p class="text-start">Welcome to Fyx.AI, the leading AI-based company dedicated to revolutionizing industries and empowering individuals through the transformative power of artificial intelligence (AI). With a team of highly skilled AI experts and engineers, we are committed to pushing the boundaries of AI technology to deliver innovative solutions that drive efficiency, enhance decision-making processes, and create positive societal impact.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin:auto;">
+		<img src="{% static 'img/about-us-1.jpg'%}" style="padding:0;height: 34rem;width: 100%;object-fit: cover;object-position: top;">
+	</div>
+	<div class="container" style="padding: inherit;">
+		<div class="row d-flex" style="margin:auto;">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<strong>Our <strong>Vision</strong></strong>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<p class="text-start">Our vision is to revolutionize industries and empower individuals by harnessing the power of artificial intelligence (AI) to drive innovation, efficiency, and positive societal impact. We strive to be at the forefront of AI technology, pushing boundaries and transforming the way businesses operate and people live.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="padding: inherit;">
+		<div class="row d-flex mission" style="margin:auto;">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<p class="text-start">Our mission is to develop cutting-edge AI solutions that solve complex problems, enhance decision-making processes, and unlock new opportunities for our clients. By leveraging advanced machine learning algorithms, natural language processing, computer vision, and other AI techniques, we aim to deliver intelligent systems that automate tasks, optimize workflows, and provide valuable insights.</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<strong>Our <strong>Mission</strong></strong>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="secation_7" id="get_in_touch">
+			<img src="{% static 'img/icons2.png'%}" class="svg_contact_ring">
+			<img src="{% static 'img/icons2.png'%}" class="svg_contact_ring2">
+			<div class="container">
+				<div class="row contact_header">
+					<span class="tag">Our contact</span>
+					<strong>Get in touch</strong>
+					<p>Reach out and we'll get in touch within 24 hours.</p>
+				</div>
+
+				<div class="row d-flex">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="{% static 'img/contactus.png'%}" style="width:100%">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<div class="row office_address" style="margin:auto">
+
+							<div class="col-lg-6 col-md-6 col-sm-12 ">
+								<div class="row" style="margin:auto">
+									<strong><i class="fa-solid fa-envelope"></i> Email Us</strong>
+									<p class="text-start">Speak to our friendly team.</p>
+									<p class="text-start">info@fyx.ai</p>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="row" style="margin:auto">
+									<strong><i class="fa-solid fa-phone"></i> Call Us</strong>
+									<p class="text-start">Mon-Fri from 10am to 5pm.</p>
+									<p class="text-start">(+91) 234-345-7890</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="row" style="margin:auto">
+									<strong><i class="fa-solid fa-location-dot"></i> Visit Us</strong>
+									<p class="text-start">Visit our office HQ.</p>
+									<p class="text-start">Mumbai, Maharashtra, India</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row subscription">
+							<strong>Subscribe to our Newsletter</strong>
+							<p class="text-start">Recieve special promotions and inside information about upcoming products !</p>
+							<input type="text" name="" class="form-custom" placeholder="Email address...">
+							<button class="btn-subscribe">Submit</button>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+{% endblock %}

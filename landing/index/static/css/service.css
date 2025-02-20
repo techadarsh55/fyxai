@@ -1,0 +1,97 @@
+.service_secation_1{
+	padding: inherit;
+}
+
+.service_secation_1 .service_header .col-sm-12 > strong{
+	font-weight: 600;
+	font-size: x-large;
+
+}
+
+
+.service_header > .header_left{
+	display: flex;
+    align-items: center;
+    align-self: center;
+}
+.service_header .header_img > img{
+	width: 80%;
+	height: auto;
+}
+.btn-service{
+	padding: 10px;
+	color: #fff;
+	background: var(--primary);
+	width: fit-content;
+	border-radius: 8px;
+}
+.service_cards{
+	margin: auto;
+	justify-content: center;
+	gap: 10px;
+}
+
+.service_cards .card{
+	width: 18rem;
+}
+
+.service_cards .card .explorebtn{
+	background: #14b65c;
+	color: #fff !important;
+	padding: 8px;
+	border-radius: 8px;
+	width: fit-content;
+}
+
+.service_secation_3{
+	padding: inherit;
+	margin-bottom: 2%;
+}
+.service_secation_3 .container > strong{
+	font-size: xx-large;
+	color: #14b65c;
+}
+
+.text_service_list{
+	margin: auto;
+	grid-gap: 10px;
+	justify-content: center;
+}
+
+.text_service_list .card{
+	width: 18rem;
+
+}
+
+.text_service_list .card a{
+	background: #14b65c;
+	color: #fff !important;
+	padding: 6px;
+	border-radius: 4px;
+}
+.service_secation_4{
+	padding: inherit;
+	margin-bottom: 2%;
+}
+.service_secation_4 .container > strong{
+	font-size: xx-large;
+	color: #14b65c;
+	text-align: center;
+}
+
+.service_secation_5{
+	padding: inherit;
+	margin-bottom: 2%;
+}
+.service_secation_5 .container > strong{
+	font-size: xx-large;
+	color: #14b65c;
+}
+.service_secation_6{
+	padding: inherit;
+	margin-bottom: 2%;
+}
+.service_secation_6 .container > strong{
+	font-size: xx-large;
+	color: #14b65c;
+}

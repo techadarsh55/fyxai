@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<script type="text/javascript" src="{% static 'js/jquery.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/base.js'%}"></script>
+	<script type="text/javascript" src="{% static 'js/all.js'%}"></script>
+	<title>Fyx.ai</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<div class="wrapper" style=" height: 100vh;">	
+<!-- navbar start -->
+	<navbar>
+		<nav>
+			<div class="custome-nav">
+				<div class="brandlogo">
+					<a href="/" style="font-weight: 600;font-size: large;color: #14b65c;"><i style="padding-right: 10px;color: #14b65c;" class="fa-solid fa-user-astronaut"></i>Fyx AI</a>
+					<button class="collapse-menu" id="menu"><i class="fa-solid fa-bars"></i></button>
+				</div>
+				<div class="user-link-container">
+				<div class="navtab">
+					<ul>
+						<li>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="{% url 'service' %}">Service</a>
+						</li>
+						<li>
+							<a href="/#pricing">Pricing</a>
+						</li>
+						<li>
+							<a href="{% url 'about-us'%}">About</a>
+						</li>
+						<!-- <li>
+							<a href="#">Contact</a>
+						</li> -->
+					</ul>
+				</div>
+				<div class="navbutton">
+					<ul>
+						<li>
+							<a href="#">Sign Up</a>
+						</li>
+						<li>
+							<a href="#">Log In</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</nav>
+	</navbar>
+
+	<main>
+		{% block content %}
+
+		{% endblock %}
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row d-flex footerlist" style="margin:auto;">
+				<div class="col-lg-6 col-md-6 col-sm-12 footer_brand">
+					<div class="row" style="margin:auto;">
+						<strong><i style="padding-right: 10px;color: #14b65c;" class="fa-solid fa-user-astronaut"></i> Fyx AI</strong>
+						<p class="text-start">Welcome to Fyx.AI, the leading AI-based company dedicated to revolutionizing industries and empowering individuals through the transformative power of artificial intelligence (AI).</p>
+						<div class="row social_media_icon">
+							<ul>
+								<li>
+									<a href=""><i class="fa-brands fa-linkedin"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+								</li>
+								<li>
+									<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-12 footer_list">
+					<div class="row" style="margin:auto;">
+						<strong>Home</strong>
+						<ul>
+							<li>
+								<a href="/#features">Feature</a>
+							</li>
+							<li>
+								<a href="/#pricing">Price</a>
+							</li>
+							<li>
+								<a href="/#get_in_touch">Get in touch</a>
+							</li>
+							<li>
+								<a href="/#client_feedbacks">Feedback</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-12 footer_list">
+					<div class="row" style="margin:auto;">
+						<strong>Service</strong>
+						<ul>
+							<li>
+								<a href="/service#text_service">Text service</a>
+							</li>
+							<li>
+								<a href="/service#image_service">Image service</a>
+							</li>
+							<li>
+								<a href="service#audio_service">Audio service</a>
+							</li>
+							<li>
+								<a href="service#video_service">Video service</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-12 footer_list">
+					<div class="row" style="margin:auto;">
+						<strong>Company</strong>
+						<ul>
+							<li>
+								<a href="">About Us</a>
+							</li>
+							<li>
+								<a href="">Contact Us</a>
+							</li>
+							<li>
+								<a href="">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="">Term & Conditions</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<hr/>
+				<div class="row copyright" style="margin:auto;">
+					<strong> &copy; 2023-24 All Right Reserved | Made by Adarsh Admane</strong>
+				</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript">
+	flag = true;
+	var menubtn = document.getElementById('menu');
+	menubtn.addEventListener("click", () =>{
+		if(flag==true){
+			$('.user-link-container').addClass('show-menu');
+			flag = false;
+		}
+		else{
+			$('.user-link-container').removeClass('show-menu');
+			flag = true;
+		}
+	})
+
+</script>
+
+</body>
+</html>
